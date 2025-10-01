@@ -4,6 +4,46 @@ import java.util.Scanner;
 
 public class CellPhoneApplication {
     public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+
+        CellPhone phone1 = new CellPhone();
+        CellPhone phone2 = new CellPhone();
+        phone2.setSerialNumber(53563);
+        phone2.setModel("Smasnug");
+        phone2.setCarrier("Verizon");
+        phone2.setPhoneNumber("412-123-4567");
+        phone2.setOwner("Chris Smasnug");
+
+        System.out.println("*** Enter your phone's information below ***");
+        System.out.print("Enter the Serial Number: ");
+        int serialNumber = keyboard.nextInt();
+        keyboard.nextLine();
+        phone1.setSerialNumber(serialNumber);
+
+        System.out.print("Enter the phone model: ");
+        String model = keyboard.nextLine();
+        phone1.setModel(model);
+
+        System.out.print("Enter the carrier: ");
+        String carrier = keyboard.nextLine();
+        phone1.setCarrier(carrier);
+
+        System.out.print("Enter the phone number: ");
+        String phoneNumber = keyboard.nextLine();
+        phone1.setPhoneNumber(phoneNumber);
+
+        System.out.print("Enter the owner name: ");
+        String owner = keyboard.nextLine().trim();
+        phone1.setOwner(owner);
+
+    }
+
+    public static void display(CellPhone phone) {
+        System.out.println("Serial Number: " + phone.getSerialNumber());
+        System.out.println("Phone Model: " + phone.getModel());
+        System.out.println("Carrier: " + phone.getCarrier());
+        System.out.println("Phone Number: " + phone.getPhoneNumber());
+        System.out.println("Owner Name: " + phone.getOwner());
 
     }
 }
