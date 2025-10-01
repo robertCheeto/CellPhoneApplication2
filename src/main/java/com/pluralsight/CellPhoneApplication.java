@@ -36,9 +36,20 @@ public class CellPhoneApplication {
         String owner = keyboard.nextLine().trim();
         phone1.setOwner(owner);
 
+        display(phone1);
+        System.out.println("\n***");
+        display(phone2);
+
+        System.out.println("\n\n");
+
+        phone1.dial(phone2.getPhoneNumber());
+        System.out.println("\n***");
+        phone2.dial(phone1.getPhoneNumber());
+
     }
 
     public static void display(CellPhone phone) {
+        System.out.println("\n*** Cell Phone Information ***");
         System.out.println("Serial Number: " + phone.getSerialNumber());
         System.out.println("Phone Model: " + phone.getModel());
         System.out.println("Carrier: " + phone.getCarrier());
