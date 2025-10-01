@@ -5,11 +5,11 @@ public class CellPhone {
     private String model, carrier, phoneNumber, owner;
 
     public CellPhone() {
-        this.serialNumber = serialNumber;
-        this.model = model;
-        this.carrier = carrier;
-        this.phoneNumber = phoneNumber;
-        this.owner = owner;
+        this.serialNumber = 0;
+        this.model = "";
+        this.carrier = "";
+        this.phoneNumber = "";
+        this.owner = "";
     }
 
     public int getSerialNumber() {
