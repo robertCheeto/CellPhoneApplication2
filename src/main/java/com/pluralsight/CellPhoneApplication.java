@@ -14,7 +14,7 @@ public class CellPhoneApplication {
         phone2.setPhoneNumber("412-123-4567");
         phone2.setOwner("Chris Smasnug");
 
-        CellPhone iPhone = new CellPhone("Verizon", "412-218-9902");
+        CellPhone iPhone = new CellPhone(12312, "iPhone", "Verizon", "412-218-9902", "Johnny Appleseed");
         display(iPhone);
 
 
@@ -60,5 +60,5 @@ public class CellPhoneApplication {
         System.out.println("Phone Number: " + phone.getPhoneNumber());
         System.out.println("Owner Name: " + phone.getOwner());
 
-    }
+    } // end of display
 }

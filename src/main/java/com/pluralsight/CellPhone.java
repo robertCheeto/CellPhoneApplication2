@@ -12,12 +12,12 @@ public class CellPhone {
         this.owner = "";
     }
 
-    public CellPhone(String carrier, String phoneNumber) {
+    public CellPhone(int serialNumber, String model, String carrier, String phoneNumber, String owner) {
         this.serialNumber = serialNumber;
-        this.model = "iPhone";
+        this.model = model;
         this.carrier = carrier;
         this.phoneNumber = phoneNumber;
-        this.owner = "Johnny Appleseed";
+        this.owner = owner;
     } // Overloaded Constructor for iPhones owned by Johnny Appleseed
 
     public int getSerialNumber() {
