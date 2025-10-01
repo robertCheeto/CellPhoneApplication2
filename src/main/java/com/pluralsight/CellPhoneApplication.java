@@ -36,9 +36,9 @@ public class CellPhoneApplication {
         String owner = keyboard.nextLine().trim();
         phone1.setOwner(owner);
 
-        display(phone1);
-        System.out.println("\n***");
-        display(phone2);
+//        display(phone1);
+//        System.out.println("\n***");
+//        display(phone2);
 
         System.out.println("\n\n");
 
