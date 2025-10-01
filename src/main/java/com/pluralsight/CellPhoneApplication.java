@@ -14,6 +14,10 @@ public class CellPhoneApplication {
         phone2.setPhoneNumber("412-123-4567");
         phone2.setOwner("Chris Smasnug");
 
+        CellPhone iPhone = new CellPhone("Verizon", "412-218-9902");
+        display(iPhone);
+
+
         System.out.println("*** Enter your phone's information below ***");
         System.out.print("Enter the Serial Number: ");
         int serialNumber = keyboard.nextInt();
